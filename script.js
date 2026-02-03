@@ -14,17 +14,34 @@ console.log(`test`);
 
 
 //aprire un ciclo dove i ha valore 1 e si ripete fino a quando e uguale/minore a 100
+
+const firstname = `Fizz`
+const secondname = `Buzz`
+
+
 for (let i = 1; i <=100; i++) {
-    console.log(i);
     
-    //trovere i multipli di 3
-    if ( i % 3==0) {
-        console.log(`fizz`)
+    //trovere i multipli di 3 (Fizz) e 5 (Buzz)
+    if ( i % 3==0 && i % 5==0) {
+        console.log(firstname + secondname)
+
 
     }
-    //trovare i multipli di 5
+    //trovare i multipli di 5 (Buzz)
     else if ( i % 5==0){
-        console.log(`buzz`);
+        console.log(secondname);
+        
+    }
+    
+    //trova i multipli di 3 (Fizz)
+    else if ( i % 3==0) {
+        console.log(firstname);
+        
+    }
+
+    //altrimenti inserisci solo il valore "i" 
+    else {
+        console.log(i);
         
     }
 }
